@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = { "guanglong" => "dabaotthao@163.com" }
   spec.platform     = :ios, "8.0"
-  spec.source       = { :git => "https://github.com/tsgx1990/TaskQueue.git" }
+  spec.source       = { :git => "https://github.com/tsgx1990/TaskQueue.git", :tag => "#{spec.version}" }
   spec.source_files = "TaskQueue/**/*.{h,m}"
   spec.requires_arc = true
 
