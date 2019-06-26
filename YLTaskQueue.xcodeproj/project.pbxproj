@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E7379B8D22C0F5C700D611F4 /* TaskStartup.m in Sources */ = {isa = PBXBuildFile; fileRef = E7379B8C22C0F5C700D611F4 /* TaskStartup.m */; };
+		E789E74522C06DCE00CD2A7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E789E74422C06DCE00CD2A7B /* AppDelegate.m */; };
+		E789E74822C06DCE00CD2A7B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E789E74722C06DCE00CD2A7B /* ViewController.m */; };
+		E789E74B22C06DCE00CD2A7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E789E74922C06DCE00CD2A7B /* Main.storyboard */; };
+		E789E74D22C06DCF00CD2A7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E789E74C22C06DCF00CD2A7B /* Assets.xcassets */; };
+		E789E75022C06DCF00CD2A7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E789E74E22C06DCF00CD2A7B /* LaunchScreen.storyboard */; };
+		E789E75322C06DCF00CD2A7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E789E75222C06DCF00CD2A7B /* main.m */; };
+		E789E75D22C06DCF00CD2A7B /* YLTaskQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E789E75C22C06DCF00CD2A7B /* YLTaskQueueTests.m */; };
+		E789E76822C06DCF00CD2A7B /* YLTaskQueueUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E789E76722C06DCF00CD2A7B /* YLTaskQueueUITests.m */; };
+		E789E77A22C06EDD00CD2A7B /* YLBaseTask.m in Sources */ = {isa = PBXBuildFile; fileRef = E789E77622C06EDD00CD2A7B /* YLBaseTask.m */; };
+		E789E77B22C06EDD00CD2A7B /* YLBaseTaskQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = E789E77922C06EDD00CD2A7B /* YLBaseTaskQueue.m */; };
+		E789E77E22C070C600CD2A7B /* YLBlockTask.m in Sources */ = {isa = PBXBuildFile; fileRef = E789E77D22C070C600CD2A7B /* YLBlockTask.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E789E75922C06DCF00CD2A7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E789E73822C06DCE00CD2A7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E789E73F22C06DCE00CD2A7B;
+			remoteInfo = YLTaskQueue;
+		};
+		E789E76422C06DCF00CD2A7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E789E73822C06DCE00CD2A7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E789E73F22C06DCE00CD2A7B;
+			remoteInfo = YLTaskQueue;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E7379B8B22C0F5C700D611F4 /* TaskStartup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskStartup.h; sourceTree = "<group>"; };
+		E7379B8C22C0F5C700D611F4 /* TaskStartup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaskStartup.m; sourceTree = "<group>"; };
+		E789E74022C06DCE00CD2A7B /* YLTaskQueue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLTaskQueue.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E789E74322C06DCE00CD2A7B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E789E74422C06DCE00CD2A7B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E789E74622C06DCE00CD2A7B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E789E74722C06DCE00CD2A7B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E789E74A22C06DCE00CD2A7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E789E74C22C06DCF00CD2A7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E789E74F22C06DCF00CD2A7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E789E75122C06DCF00CD2A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E789E75222C06DCF00CD2A7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E789E75822C06DCF00CD2A7B /* YLTaskQueueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YLTaskQueueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E789E75C22C06DCF00CD2A7B /* YLTaskQueueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLTaskQueueTests.m; sourceTree = "<group>"; };
+		E789E75E22C06DCF00CD2A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E789E76322C06DCF00CD2A7B /* YLTaskQueueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YLTaskQueueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E789E76722C06DCF00CD2A7B /* YLTaskQueueUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLTaskQueueUITests.m; sourceTree = "<group>"; };
+		E789E76922C06DCF00CD2A7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E789E77622C06EDD00CD2A7B /* YLBaseTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLBaseTask.m; sourceTree = "<group>"; };
+		E789E77722C06EDD00CD2A7B /* YLBaseTaskQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLBaseTaskQueue.h; sourceTree = "<group>"; };
+		E789E77822C06EDD00CD2A7B /* YLBaseTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLBaseTask.h; sourceTree = "<group>"; };
+		E789E77922C06EDD00CD2A7B /* YLBaseTaskQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLBaseTaskQueue.m; sourceTree = "<group>"; };
+		E789E77C22C070C600CD2A7B /* YLBlockTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLBlockTask.h; sourceTree = "<group>"; };
+		E789E77D22C070C600CD2A7B /* YLBlockTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLBlockTask.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E789E73D22C06DCE00CD2A7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E789E75522C06DCF00CD2A7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E789E76022C06DCF00CD2A7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E789E73722C06DCE00CD2A7B = {
+			isa = PBXGroup;
+			children = (
+				E789E77522C06EDD00CD2A7B /* TaskQueue */,
+				E789E74222C06DCE00CD2A7B /* YLTaskQueue */,
+				E789E75B22C06DCF00CD2A7B /* YLTaskQueueTests */,
+				E789E76622C06DCF00CD2A7B /* YLTaskQueueUITests */,
+				E789E74122C06DCE00CD2A7B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E789E74122C06DCE00CD2A7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E789E74022C06DCE00CD2A7B /* YLTaskQueue.app */,
+				E789E75822C06DCF00CD2A7B /* YLTaskQueueTests.xctest */,
+				E789E76322C06DCF00CD2A7B /* YLTaskQueueUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E789E74222C06DCE00CD2A7B /* YLTaskQueue */ = {
+			isa = PBXGroup;
+			children = (
+				E789E74322C06DCE00CD2A7B /* AppDelegate.h */,
+				E789E74422C06DCE00CD2A7B /* AppDelegate.m */,
+				E7379B8B22C0F5C700D611F4 /* TaskStartup.h */,
+				E7379B8C22C0F5C700D611F4 /* TaskStartup.m */,
+				E789E74622C06DCE00CD2A7B /* ViewController.h */,
+				E789E74722C06DCE00CD2A7B /* ViewController.m */,
+				E789E74922C06DCE00CD2A7B /* Main.storyboard */,
+				E789E74C22C06DCF00CD2A7B /* Assets.xcassets */,
+				E789E74E22C06DCF00CD2A7B /* LaunchScreen.storyboard */,
+				E789E75122C06DCF00CD2A7B /* Info.plist */,
+				E789E75222C06DCF00CD2A7B /* main.m */,
+			);
+			path = YLTaskQueue;
+			sourceTree = "<group>";
+		};
+		E789E75B22C06DCF00CD2A7B /* YLTaskQueueTests */ = {
+			isa = PBXGroup;
+			children = (
+				E789E75C22C06DCF00CD2A7B /* YLTaskQueueTests.m */,
+				E789E75E22C06DCF00CD2A7B /* Info.plist */,
+			);
+			path = YLTaskQueueTests;
+			sourceTree = "<group>";
+		};
+		E789E76622C06DCF00CD2A7B /* YLTaskQueueUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E789E76722C06DCF00CD2A7B /* YLTaskQueueUITests.m */,
+				E789E76922C06DCF00CD2A7B /* Info.plist */,
+			);
+			path = YLTaskQueueUITests;
+			sourceTree = "<group>";
+		};
+		E789E77522C06EDD00CD2A7B /* TaskQueue */ = {
+			isa = PBXGroup;
+			children = (
+				E789E77822C06EDD00CD2A7B /* YLBaseTask.h */,
+				E789E77622C06EDD00CD2A7B /* YLBaseTask.m */,
+				E789E77722C06EDD00CD2A7B /* YLBaseTaskQueue.h */,
+				E789E77922C06EDD00CD2A7B /* YLBaseTaskQueue.m */,
+				E789E77C22C070C600CD2A7B /* YLBlockTask.h */,
+				E789E77D22C070C600CD2A7B /* YLBlockTask.m */,
+			);
+			path = TaskQueue;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E789E73F22C06DCE00CD2A7B /* YLTaskQueue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E789E76C22C06DCF00CD2A7B /* Build configuration list for PBXNativeTarget "YLTaskQueue" */;
+			buildPhases = (
+				E789E73C22C06DCE00CD2A7B /* Sources */,
+				E789E73D22C06DCE00CD2A7B /* Frameworks */,
+				E789E73E22C06DCE00CD2A7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YLTaskQueue;
+			productName = YLTaskQueue;
+			productReference = E789E74022C06DCE00CD2A7B /* YLTaskQueue.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E789E75722C06DCF00CD2A7B /* YLTaskQueueTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E789E76F22C06DCF00CD2A7B /* Build configuration list for PBXNativeTarget "YLTaskQueueTests" */;
+			buildPhases = (
+				E789E75422C06DCF00CD2A7B /* Sources */,
+				E789E75522C06DCF00CD2A7B /* Frameworks */,
+				E789E75622C06DCF00CD2A7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E789E75A22C06DCF00CD2A7B /* PBXTargetDependency */,
+			);
+			name = YLTaskQueueTests;
+			productName = YLTaskQueueTests;
+			productReference = E789E75822C06DCF00CD2A7B /* YLTaskQueueTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E789E76222C06DCF00CD2A7B /* YLTaskQueueUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E789E77222C06DCF00CD2A7B /* Build configuration list for PBXNativeTarget "YLTaskQueueUITests" */;
+			buildPhases = (
+				E789E75F22C06DCF00CD2A7B /* Sources */,
+				E789E76022C06DCF00CD2A7B /* Frameworks */,
+				E789E76122C06DCF00CD2A7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E789E76522C06DCF00CD2A7B /* PBXTargetDependency */,
+			);
+			name = YLTaskQueueUITests;
+			productName = YLTaskQueueUITests;
+			productReference = E789E76322C06DCF00CD2A7B /* YLTaskQueueUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E789E73822C06DCE00CD2A7B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = guanglong;
+				TargetAttributes = {
+					E789E73F22C06DCE00CD2A7B = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					E789E75722C06DCF00CD2A7B = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = E789E73F22C06DCE00CD2A7B;
+					};
+					E789E76222C06DCF00CD2A7B = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = E789E73F22C06DCE00CD2A7B;
+					};
+				};
+			};
+			buildConfigurationList = E789E73B22C06DCE00CD2A7B /* Build configuration list for PBXProject "YLTaskQueue" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E789E73722C06DCE00CD2A7B;
+			productRefGroup = E789E74122C06DCE00CD2A7B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E789E73F22C06DCE00CD2A7B /* YLTaskQueue */,
+				E789E75722C06DCF00CD2A7B /* YLTaskQueueTests */,
+				E789E76222C06DCF00CD2A7B /* YLTaskQueueUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E789E73E22C06DCE00CD2A7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E789E75022C06DCF00CD2A7B /* LaunchScreen.storyboard in Resources */,
+				E789E74D22C06DCF00CD2A7B /* Assets.xcassets in Resources */,
+				E789E74B22C06DCE00CD2A7B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E789E75622C06DCF00CD2A7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E789E76122C06DCF00CD2A7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E789E73C22C06DCE00CD2A7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7379B8D22C0F5C700D611F4 /* TaskStartup.m in Sources */,
+				E789E74822C06DCE00CD2A7B /* ViewController.m in Sources */,
+				E789E75322C06DCF00CD2A7B /* main.m in Sources */,
+				E789E77B22C06EDD00CD2A7B /* YLBaseTaskQueue.m in Sources */,
+				E789E77E22C070C600CD2A7B /* YLBlockTask.m in Sources */,
+				E789E77A22C06EDD00CD2A7B /* YLBaseTask.m in Sources */,
+				E789E74522C06DCE00CD2A7B /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E789E75422C06DCF00CD2A7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E789E75D22C06DCF00CD2A7B /* YLTaskQueueTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E789E75F22C06DCF00CD2A7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E789E76822C06DCF00CD2A7B /* YLTaskQueueUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E789E75A22C06DCF00CD2A7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E789E73F22C06DCE00CD2A7B /* YLTaskQueue */;
+			targetProxy = E789E75922C06DCF00CD2A7B /* PBXContainerItemProxy */;
+		};
+		E789E76522C06DCF00CD2A7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E789E73F22C06DCE00CD2A7B /* YLTaskQueue */;
+			targetProxy = E789E76422C06DCF00CD2A7B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E789E74922C06DCE00CD2A7B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E789E74A22C06DCE00CD2A7B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E789E74E22C06DCF00CD2A7B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E789E74F22C06DCF00CD2A7B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E789E76A22C06DCF00CD2A7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E789E76B22C06DCF00CD2A7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E789E76D22C06DCF00CD2A7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QCG7464ETA;
+				INFOPLIST_FILE = YLTaskQueue/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lgl.YLTaskQueue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E789E76E22C06DCF00CD2A7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QCG7464ETA;
+				INFOPLIST_FILE = YLTaskQueue/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lgl.YLTaskQueue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E789E77022C06DCF00CD2A7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YLTaskQueueTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lgl.YLTaskQueueTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YLTaskQueue.app/YLTaskQueue";
+			};
+			name = Debug;
+		};
+		E789E77122C06DCF00CD2A7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YLTaskQueueTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lgl.YLTaskQueueTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YLTaskQueue.app/YLTaskQueue";
+			};
+			name = Release;
+		};
+		E789E77322C06DCF00CD2A7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YLTaskQueueUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lgl.YLTaskQueueUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YLTaskQueue;
+			};
+			name = Debug;
+		};
+		E789E77422C06DCF00CD2A7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YLTaskQueueUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lgl.YLTaskQueueUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YLTaskQueue;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E789E73B22C06DCE00CD2A7B /* Build configuration list for PBXProject "YLTaskQueue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E789E76A22C06DCF00CD2A7B /* Debug */,
+				E789E76B22C06DCF00CD2A7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E789E76C22C06DCF00CD2A7B /* Build configuration list for PBXNativeTarget "YLTaskQueue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E789E76D22C06DCF00CD2A7B /* Debug */,
+				E789E76E22C06DCF00CD2A7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E789E76F22C06DCF00CD2A7B /* Build configuration list for PBXNativeTarget "YLTaskQueueTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E789E77022C06DCF00CD2A7B /* Debug */,
+				E789E77122C06DCF00CD2A7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E789E77222C06DCF00CD2A7B /* Build configuration list for PBXNativeTarget "YLTaskQueueUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E789E77322C06DCF00CD2A7B /* Debug */,
+				E789E77422C06DCF00CD2A7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E789E73822C06DCE00CD2A7B /* Project object */;
+}
